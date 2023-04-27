@@ -208,25 +208,34 @@
 <div class="image-container">
   <div class="image-wrapper" style="padding-right: 50px;">
     <h3>Discover 3D Objects From Embodied Visual Data</h3>
-  <img src="./static/images/web_codebook.jpg" style="height: 325px;width: auto">
+    <img src="./static/images/web_codebook.jpg" style="max-height: 325px; max-width: 100%; object-fit: cover;">
   </div>
   <div class="image-wrapper">
     <h3>Infer Object Depths Without Supervision</h3>
-  <img src="./static/images/ObjectDepthMap.jpg" style="height: 330px;width: auto">
+    <img src="./static/images/ObjectDepthMap.jpg" style="max-height: 330px; max-width: 100%; object-fit: cover;">
   </div>
   <div class="image-wrapper">
-    <h3>Segment Discovered Real-World Objects </h3>
-  <img src="./static/images/NYU_2.jpg" style="height: 330px;width: auto">
+    <h3>Segment Discovered Real-World Objects</h3>
+    <img src="./static/images/NYU_2.jpg" style="max-height: 330px; max-width: 100%; object-fit: cover;">
+  </div>
 </div>
-</div>
+
 <style>
 .image-header {
-    text-align: center;
-  }
+  text-align: center;
+}
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Media query for screens less than or equal to 600px */
+@media (max-width: 600px) {
+  .image-wrapper {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 </style>
 
